@@ -1,7 +1,8 @@
 /* style css ku custom */
 :root {
-  --primary: rgb(167, 183, 216);
+  --primary: #876955;
   --bg: rgb(226, 213, 213);
+  --secondary: #b3c82d;
 }
 
 * {
@@ -16,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 5%;
-  background-color: rgba(171, 171, 230, 0.7);
+  background-color: #18120e;
 
   /* postition */
   position: fixed;
@@ -131,6 +132,29 @@
   }
 }
 
+/* hero section start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../media/kedaikopi-coffe3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero .main-content .header-paragraf {
+  font-size: 3em;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.hero .main-content .header-content {
+  color: white;
+}
+/* hero section end */
 /* smartphone scale
   @media screen (min-width: 640px) {
     /* media scale 640px */
