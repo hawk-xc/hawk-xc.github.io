@@ -125,6 +125,14 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.about {
+  margin: 2rem 10%;
+}
+
+.about .main-content-about {
+  color: #fff;
+}
 /* desktop / laptop scale */
 @media (max-width: 1008px) {
   /* media scale 1008px */
