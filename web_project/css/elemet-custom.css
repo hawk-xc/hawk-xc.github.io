@@ -128,12 +128,21 @@ body {
 
 .about {
   margin: 2rem 10%;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .about .main-content-about {
   color: #fff;
 }
+
+.about .main-content-about h2 {
+  font-style: oblique;
+}
+
+.about .main-content-about img {
+  align-items: center;
+}
+
 /* desktop / laptop scale */
 @media (max-width: 1008px) {
   /* media scale 1008px */
