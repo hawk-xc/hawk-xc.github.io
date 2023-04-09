@@ -141,6 +141,7 @@ body {
 
 .about .main-content-about img {
   align-items: center;
+  width: 100%;
 }
 
 /* desktop / laptop scale */
