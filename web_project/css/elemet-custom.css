@@ -126,23 +126,47 @@ body {
   justify-content: center;
 }
 
+/* about section start */
 .about {
   margin: 2rem 10%;
   padding-top: 3rem;
 }
 
-.about .main-content-about {
-  color: #fff;
-}
-
-.about .main-content-about h2 {
+.about h2 {
   font-style: oblique;
+  color: var(--secondary);
 }
 
-.about .main-content-about img {
+.about img {
   align-items: center;
   width: 100%;
 }
+
+.about .main-content-about {
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  /* margin-block: 3rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .about h2 {
+  margin: 3rem 10%;
+} */
+
+.about .main-content-about .row-text {
+  align-items: center;
+  justify-content: center;
+  order: 1;
+}
+
+.about .main-content-about .row-image img {
+  width: 100%;
+  order: 2;
+}
+
+/* about section end */
 
 /* desktop / laptop scale */
 @media (max-width: 1008px) {
@@ -193,9 +217,38 @@ body {
   }
 
   /* hero content responsive */
+  .hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../media/kedaikopi-coffe3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
   .hero .main-content {
     display: block;
     width: 300px;
+  }
+
+  /* about section responsive */
+  .about .main-content-about {
+    padding: 1rem 10%;
+    /* display: block; */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .about .main-content-about .row-text {
+    order: 2;
+  }
+  .about .main-content-about .row-image img {
+    order: 1;
   }
 }
 
