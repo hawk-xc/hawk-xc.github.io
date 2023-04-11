@@ -152,6 +152,17 @@ body {
   justify-content: center;
 }
 
+/* hover zoom section */
+.menusection .main-content-section-card .card:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.menusection .main-content-section-card a {
+  text-decoration: none;
+  color: black;
+}
+
 .menusection .main-content-section-card .card {
   margin: 1rem;
   width: 18rem;
@@ -166,16 +177,48 @@ body {
   display: flex;
   align-items: center;
 }
-.footer-section .row {
-  color: var(--light);
-  font-size: 10px;
-  margin: 2rem 2rem 2%;
+
+.footer-section .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-section .row .col-4 img {
-  width: 100px;
-  display: block;
+.footer-section .footer-container img {
+  width: 170px;
 }
+
+.footer-section .footer-container .block {
+  width: 400px;
+  color: var(--light);
+  display: flex;
+  font-weight: 30;
+  font-size: 50%;
+  margin: 0.3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section .footer-container .block .social-section {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+}
+
+.footer-section .footer-container .block .social-section a {
+  color: var(--primary);
+}
+
+.footer-section .footer-container .block .social-section a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 30px white, 0px 0px 30px white, 0px 0px 30px white,
+    0px 0px 10px #553300, 0px 0px 10px #553300;
+}
+
+.footer-section .footer-container .block span {
+  text-align: center;
+}
+
 /* footer section end */
 
 /* desktop / laptop scale */
