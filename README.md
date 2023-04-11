@@ -20,5 +20,7 @@ hawk-xc.github.io
 │      ├──js
 │      ├──media
 │      └──php
+├──Draco PSD Resume Template.png
+├──Draco PSD Resume Template.psd
 └──README.md
 ```
