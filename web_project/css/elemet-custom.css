@@ -153,6 +153,7 @@ body {
 
 .menusection .main-content-section-card .card {
   margin: 1rem;
+  width: 18rem;
 }
 /* menu section end */
 
@@ -246,6 +247,12 @@ body {
   }
   .about .main-content-about .row-image img {
     order: 1;
+  }
+}
+
+@media (max-width: 641px) {
+  .menusection .main-content-section-card .card {
+    width: 50rem;
   }
 }
 

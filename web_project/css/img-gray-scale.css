@@ -5,6 +5,8 @@ figure {
   padding: 0;
   background: #fff;
   overflow: hidden;
+  border: 1px solid #fff;
+  border-image: 1px solid #fff;
 }
 
 /* Shine */
