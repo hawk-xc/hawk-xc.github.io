@@ -128,11 +128,16 @@ body {
 
 .menusection {
   margin: 3rem 10%;
+  padding-top: 1rem;
 }
 
 /* menu section start */
 .menusection img {
   width: 100%;
+}
+
+.menusection .img-banner {
+  margin: 1rem 4%;
 }
 
 .menusection h2 {
@@ -150,6 +155,15 @@ body {
   margin: 1rem;
 }
 /* menu section end */
+
+/* footer section start */
+.section .footer-action {
+  width: 100%;
+  height: 200px;
+  background-color: var(--secondary);
+  display: flex;
+}
+/* footer section end */
 
 /* desktop / laptop scale */
 @media (max-width: 1008px) {
