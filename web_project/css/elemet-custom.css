@@ -193,6 +193,7 @@ body {
   color: var(--light);
   width: 500px;
   font-size: 70%;
+  font-weight: 1;
   flex: 1;
   margin: 1rem 2%;
   /* sematic function */
@@ -201,7 +202,12 @@ body {
 }
 
 .about-section .container-about-section .block .kotak-text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section .container-about-section .block .kotak-text p {
+  margin-bottom: 3rem;
 }
 
 .about-section .container-about-section .block .kotak-text a {
@@ -345,6 +351,14 @@ body {
   /* footer section */
   .footer-section .row {
     font-size: 50%;
+  }
+
+  .about-section .container-about-section .block .kotak-text {
+    text-align: center;
+  }
+
+  .about-section .container-about-section .block iframe {
+    width: 100%;
   }
 }
 
