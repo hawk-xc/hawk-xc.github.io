@@ -16,9 +16,13 @@ hawk-xc.github.io
 ├──web_project
 │      ├──index.html
 │      ├──css
+│      │   └──*.css
 │      ├──font-awesome-4.7.0
+│      │   └──*.css
 │      ├──js
+│      │   └──*.js
 │      ├──media
+│      │   └──*.png
 │      ├──php
 │      │   └──run.php
 │      └──menu
