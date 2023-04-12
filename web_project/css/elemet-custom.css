@@ -346,6 +346,16 @@ body {
   .about-section .container-about-section {
     flex-direction: column;
   }
+
+  .about-section .container-about-section .block {
+    width: 100%;
+  }
+
+  .about-section .container-about-section .block .kotak-text a {
+    display: inline;
+    text-decoration: wavy;
+    color: var(--light);
+  }
   /* about section */
 
   /* footer section */
