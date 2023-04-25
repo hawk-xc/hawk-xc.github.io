@@ -1,0 +1,33 @@
+@import url("elemet-custom.css");
+
+/* reset elemet */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.section-hero-menu {
+  width: 100%;
+  margin-top: 10rem;
+
+  /* grid overlay */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.section-hero-menu .item-gambar {
+  width: 30%;
+  height: 300px;
+  background-color: aqua;
+}
+
+.section-hero-menu .item-gambar img {
+  width: 200px;
+}
+
+.section-hero-menu .item-content {
+  width: 70%;
+  height: 300px;
+  background-color: blueviolet;
+}
