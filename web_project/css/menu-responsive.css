@@ -82,15 +82,11 @@
 }
 
 .balok-2 .share-block .link {
-  width: 100%;
+  width: 60%;
 }
 
 .balok-2 .share-block a:hover {
   color: aqua;
-}
-
-.balok-2 .share-block .link:hover {
-  width: 80%;
 }
 
 .section-container .balok-2 .block-harga {
@@ -113,6 +109,17 @@
 .section-container .balok-2 p {
   font-size: 60%;
 }
+
+/* menu detail section start */
+.section-container .balok-2 .detail-menu {
+  font-size: 60%;
+  display: grid;
+  width: 100%;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+/* menu detail section end */
+
 /* balok-2 propherty end */
 
 @media screen and (min-width: 624px) {
@@ -137,6 +144,10 @@
     width: 60%;
   }
 
+  .balok-2 .share-block .link {
+    width: 100%;
+  }
+
   .section-container .balok-2 p {
     font-size: 100%;
   }
@@ -145,6 +156,10 @@
 
   .section-container .balok-2 .block-harga .item {
     height: 130px;
+  }
+
+  .section-container .balok-2 .detail-menu {
+    font-size: 100%;
   }
   /* balok-2 propherty item end */
 }
