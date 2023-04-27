@@ -7,7 +7,7 @@
 }
 
 .section-container {
-  width: 100%;
+  /* width: 40%; */
   height: 400px;
   display: flex;
   justify-content: center;
@@ -15,12 +15,12 @@
 
   /* margin top */
   margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 .section-container .section-hero-menu {
   display: grid;
-  width: 80%;
+  width: 40%;
   /* grid-template-columns: 1fr 1fr; */
 
   grid-template-areas:
@@ -32,36 +32,76 @@
 .section-container .section-hero-menu .item {
   width: 100%;
   /* height: 500px; */
-  border-radius: 2%;
+  border-radius: 1%;
   padding-top: 2rem;
 
   /* flex direction */
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-
-  padding: 1rem;
-}
-
-.section-container .section-hero-menu .item img {
-  width: 300px;
-  height: 300px;
 }
 
 .satu {
   grid-area: satu;
-  background-color: aqua;
+  background-color: #261c16;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
 }
 
 .dua {
   grid-area: dua;
-  background-color: coral;
+  background-color: #261c16;
+  color: var(--light);
+
+  font-weight: 10;
+  font-size: 13px;
+  padding: 2rem;
+}
+
+/* block menu */
+.section-container .section-hero-menu .item .kotak-block {
+  display: grid;
+  grid-template-columns: repeat(2, 170px);
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+
+.section-container .section-hero-menu .item .kotak-block .block {
+  border: 1px solid var(--secondary);
+  width: 170px;
+  height: 130px;
+  border-radius: 5%;
+  padding: 0.7rem;
+}
+
+/* list detail style */
+.section-container .section-hero-menu .item ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+
+  margin-top: 1rem;
+}
+
+.section-container .section-hero-menu .item ul li {
+  width: 100%;
+  /* background-color: blueviolet; */
 }
 
 /* media query */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .section-container .section-hero-menu {
+    width: 90%;
     grid-template-areas: "satu dua dua dua dua dua";
     gap: 1rem;
   }
+  /* .dua {
+    justify-content: center;
+    align-items: center;
+  } */
+  .section-container {
+    width: 100%;
 }
