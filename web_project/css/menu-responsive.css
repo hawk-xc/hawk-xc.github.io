@@ -62,13 +62,44 @@
 /* balok-1 propherty end */
 
 /* balok-2 propherty start */
+.section-container .balok-2 .share-block {
+  display: grid;
+  grid-template-areas: "start-place end-place";
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-place {
+  grid-area: start-place;
+}
+
+.end-place {
+  grid-area: end-place;
+}
+
+.balok-2 .share-block a {
+  color: white;
+}
+
+.balok-2 .share-block .link {
+  width: 100%;
+}
+
+.balok-2 .share-block a:hover {
+  color: aqua;
+}
+
+.balok-2 .share-block .link:hover {
+  width: 80%;
+}
+
 .section-container .balok-2 .block-harga {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  width: 50%;
+  width: 60%;
 }
 
 .section-container .balok-2 .block-harga .item {
