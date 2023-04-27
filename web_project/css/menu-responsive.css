@@ -107,12 +107,12 @@
 }
 
 .section-container .balok-2 p {
-  font-size: 60%;
+  font-size: 70%;
 }
 
 /* menu detail section start */
 .section-container .balok-2 .detail-menu {
-  font-size: 60%;
+  font-size: 70%;
   display: grid;
   width: 100%;
   gap: 3rem;
