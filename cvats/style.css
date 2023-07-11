@@ -61,6 +61,7 @@ body {
   flex-direction: row;
   width: 100%;
   gap: 10rem;
+  flex-wrap: wrap;
   /* padding: 3rem; */
 }
 
@@ -102,4 +103,13 @@ body {
   height: 6rem;
   background-color: #b68148;
   border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width: 800px) {
+  * {
+    /* font-size: 50%; */
+  }
+  .container .kontak {
+    gap: 0rem;
+  }
 }
