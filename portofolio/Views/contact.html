@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="duration-100 animate-munculkan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/output.css">
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <section name="header" class="w-full mb-3 px-3 py-3 flex justify-between fixed z-50 backdrop-blur-[5px] border-b border-teal-300 top-0">
+        <span>Fitri Alisia</span>
+    </section>
+</head>
+<body class="dark:bg-slate-800">
+    <section name="hero" class="max-sm:mt-10">
+        <div class="max-w-full flex flex-wrap justify-center align-middle items-center sm:mx-4 md:mx-36 min-lg:mx-10">
+            <div name="typografi" class="block min-lg:w-full md:w-1/2 sm:w-1/2 pl-5 max-sm:order-last">
+                <span class="font-semibold text-teal-500 dark:text-teal-200 block mb-2 md:text-2xl min-lg:text-2xl">Hallo perkenalkan 👋, saya</span>
+                <span class="sm:text-3xl max-sm:text-3xl font-extrabold text-slate-700 dark:text-teal-200 md:text-6xl min-lg:text-6xl">Fitri Alisia</span>
+                <span class="block font-light text-teal-700 dark:text-teal-300 md:text-2xl min-lg:text-2xl">Mahasiswa / Learner</span>
+                <span class="block mt-3 max-sm:text-sm italic text-teal-800 dark:text-teal-400 md:text-lg min-lg:text-lg">"Jangan biarkan rasa takut menentukan masa <span class="font-extrabold text-slate-800 dark:text-white">depanmu.</span>"</span>
+                <button class="bg-teal-400 px-5 py-2 rounded-full mt-5 text-white hover:bg-teal-500 duration-100 dark:text-teal-800 active:scale-105">Hubungi saya</button>
+            </div>
+            <div name="avatar" class="min-lg:w-full md:w-1/2 sm:w-1/2 flex justify-center relative align-middle items-center">
+                <img src="../gambar-fitri.png" alt="" class="z-10 mx-auto my-auto md:top-8 max-sm:w-[15rem] absolute">
+                <svg width="" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="">
+                    <path fill="#5eead4" d="M48.5,-58.8C63.9,-55.5,78.3,-42.8,82.6,-27.4C86.9,-11.9,81.1,6.3,75,24.1C68.9,42,62.4,59.5,49.9,70.7C37.3,81.8,18.7,86.5,3.1,82.2C-12.4,77.9,-24.9,64.7,-40.2,54.4C-55.5,44.2,-73.6,37,-83.2,23.3C-92.7,9.6,-93.7,-10.6,-84.8,-24.3C-75.9,-38.1,-57.1,-45.3,-41.3,-48.6C-25.5,-51.8,-12.7,-51,1.9,-53.6C16.5,-56.2,33,-62.2,48.5,-58.8Z" transform="translate(100 100)" />
+                  </svg>
+            </div>
+        </div>
+    </section>
+    <div class="flex max-w-full h-32 justify-center items-center align-middle my-auto mx-auto mt-5 dark:text-white" name="box">
+        <span class="mr-3">light</span>
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle">
+            <div class="w-9 h-4 bg-slate-400 rounded-full box-border relative cursor-pointer">
+                <div id="switchToggle" name="switcher" class="absolute h-full aspect-square ring-1 ring-blue-300 rounded-full bg-white"></div>
+            </div>
+        </label>
+        <span class="ml-3">dark</span>
+    </div>
+    <section name="aboutme" id="aboutme" class="flex md:flex-row max-sm:flex-col flex-wrap md:mx-40 sm:mx-4 max-sm:mx-4 max-sm:gap-5">
+        <div name="box-1" class="px-5 md:w-1/2 max-sm:w-full flex flex-col">
+            <span class="md:text-2xl sm:text-lg mb-2 font-extrabold text-teal-700 dark:text-teal-400">Tentang saya</span>
+            <span class="text-sm font-extralight text-teal-900 dark:text-teal-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi deleniti, quam perferendis molestias ex nulla?</span>
+        </div>
+        <div name="box-2" class="px-5 md:w-1/2 max-sm:w-full flex flex-col">
+            <span class="md:text-2xl sm:text-lg mb-2 font-extrabold text-teal-700 dark:text-teal-400">Karir</span>
+            <span class="text-sm font-extralight text-teal-900 dark:text-teal-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam nobis deserunt fugiat fugit assumenda a ducimus corporis doloribus deleniti!</span>
+        </div>
+    </section>
+    <section class="px-2 mb-5">
+
+<ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+    <li class="mb-10 ml-4">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+  </svg></a>
+    </li>
+    <li class="mb-10 ml-4">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+    </li>
+    <li class="ml-4">
+        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+    </li>
+</ol>
+    </section>
+</body>
+<script>
+    const toggleButton = document.getElementById('toggle');
+    const toggleIcon = document.getElementById('switchToggle');
+    toggle.addEventListener('change', function() {
+        toggleIcon.classList.toggle('right-0');
+        document.documentElement.classList.toggle('dark')
+    });
+
+    let nav = document.querySelector('section[name=header]');
+
+    window.onscroll = function() {
+        window.pageYOffset > 100 ? console.log(window.pageYOffset, nav.offsetTop, 'benar') : alert('scroll lagi')
+    }
+</script>
