@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="duration-100 animate-munculkan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/output.css">
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="p-0 m-0 dark dark:bg-slate-800 dark:text-white">
+   <div class="container max-w-full">
+    <div name="navbar" class="py-3 px-4 flex flex-row items-center justify-between">
+        <span><h3 class="text-2xl font-bold"><i class="fas fa-hat-wizard"></i> Gallery</h3></span>
+        <div name="hiddenNav" class="sm:hidden flex flex-row gap-2">
+            <span id="box" name="lightButton" class="box-border p-2 w-8 h-8 flex items-center justify-center rounded-lg border border-slate-300 border-opacity-80 hover:bg-slate-200 transition-all duration-100 ease-in animate-munculkan">
+                <i name="buttonIcon" class="fas fa-sun"></i>
+            </span>
+            <span id="box" name="oButton" class="box-border p-2 w-8 h-8 flex items-center justify-center rounded-lg border border-slate-300 border-opacity-80 hover:bg-slate-200 transition-all duration-100 ease-in">
+                <i class="fas fa-ellipsis-v"></i>
+            </span>
+        </div>
+        <span class="hidden sm:flex sm:gap-4 align-middle items-center content-center">
+            <ul name="navCenter" class="flex flex-row gap-3 bg-blue-200 rounded-lg px-4 py-2 font-bold">
+                <li class="cursor-pointer hover:animate-pulse"><i class="fas fa-smile-beam"></i> About</li>
+                <li class="cursor-pointer hover:animate-pulse"><i class="fas fa-ad"></i> Services</li>
+                <li class="cursor-pointer hover:animate-pulse"><i class="fas fa-dollar-sign"></i> Pricing</li>
+                <li class="cursor-pointer hover:animate-pulse"><i class="fas fa-headset"></i> <a href="contact.html">Contact</a></li>
+            </ul>
+        </span>
+        <span class="hidden sm:flex text-sm">
+            <span id="box" name="lightButton" class="box-border p-2 w-8 h-8 flex items-center justify-center rounded-lg border border-slate-300 border-opacity-80 hover:bg-slate-200 transition-all duration-100 ease-in animate-munculkan">
+                <i name="buttonIcon2" class="fas fa-sun"></i>
+            </span>
+        </span>
+    </div>
+    <div name="navShow" class="hidden group box-border w-full mx-auto duration-100 animate-munculkan absolute dark:text-slate-800">
+        <ul class="p-3 rounded-lg bg-gray-100 text-lg mx-3 my-1 flex flex-col">
+            <li class="bg-blue-500 text-white p-2 rounded-lg mb-[5px] hover:translate-x-1 duration-100 cursor-pointer">Home</li>
+            <li class="hover:bg-gray-200 hover:translate-x-1 duration-100 p-2 rounded-lg mb-[5px] cursor-pointer">About</li>
+            <li class="hover:bg-gray-200 hover:translate-x-1 duration-100 p-2 rounded-lg mb-[5px] cursor-pointer">Services</li>
+            <li class="hover:bg-gray-200 hover:translate-x-1 duration-100 p-2 rounded-lg mb-[5px] cursor-pointer">Pricing</li>
+            <li class="hover:bg-gray-200 hover:translate-x-1 duration-100 p-2 rounded-lg mb-[5px] cursor-pointer">Contact</li>
+        </ul>
+    </div>
+    <div name="body-of-content" class="static h-full max-w-full">
+        <box name="bacaan" class="bg-yellow-200 p-3">
+            <h3>List penyelesaian : </h3>
+        </box>
+    </div>
+</body> 
+<script>
+    const main = document.documentElement;
+    const oButton = document.querySelector('span[name=oButton]');
+    const navShow = document.querySelector('div[name=navShow]');
+    const boc = document.querySelector('div[name=body-of-content]');
+    const lightButton = document.querySelectorAll('span[name=lightButton]');
+    const lightIcon = document.querySelector('span > i');
+    const lightIcon2 = document.querySelector('span > i[name=buttonIcon2]');
+    const twoBox = document.querySelectorAll('span#box');
+
+    // this is just testing purpose
+    const SNav = document.querySelector('ul[name=navCenter]');
+
+    oButton.addEventListener('click', function() {
+        navShow.classList.toggle('hidden');
+        oButton.classList.toggle('bg-slate-200');
+    })
+    boc.addEventListener('click', function() {
+        navShow.classList.add('hidden');
+    });
+
+    lightButton[0].addEventListener('click', function() {
+        if(lightIcon.classList.contains('fa-sun')) {
+            // lightIcon.classList.toggle('duration-100 animate-munculkan');
+            lightIcon.classList.replace('fa-sun', 'fa-moon');
+            twoBox[0].classList.replace('hover:bg-slate-200', 'hover:bg-slate-700');
+            twoBox[1].classList.replace('hover:bg-slate-200', 'hover:bg-slate-700');
+            main.classList.toggle('dark');
+        } else {
+            lightIcon.classList.replace('fa-moon', 'fa-sun');
+            twoBox[0].classList.replace('hover:bg-slate-700', 'hover:bg-slate-200');
+            twoBox[1].classList.replace('hover:bg-slate-700', 'hover:bg-slate-200');
+            main.classList.toggle('dark');
+        }
+    })
+    
+    lightButton[1].addEventListener('click', function() {
+        if(lightIcon2.classList.contains('fa-sun')) {
+            // lightIcon.classList.toggle('duration-100 animate-munculkan');
+            lightIcon2.classList.replace('fa-sun', 'fa-moon');
+            twoBox[0].classList.replace('hover:bg-slate-200', 'hover:bg-slate-700');
+            twoBox[1].classList.replace('hover:bg-slate-200', 'hover:bg-slate-700');
+            main.classList.toggle('dark');
+            lightButton[1].classList.toggle('dark:hover:bg-slate-700');
+            SNav.classList.toggle('bg-slate-700');
+        } else {
+            lightIcon2.classList.replace('fa-moon', 'fa-sun');
+            twoBox[0].classList.replace('hover:bg-slate-700', 'hover:bg-slate-200');
+            twoBox[1].classList.replace('hover:bg-slate-700', 'hover:bg-slate-200');
+            main.classList.toggle('dark');
+            lightButton[1].classList.toggle('dark:hover:bg-slate-700');
+            SNav.classList.toggle('bg-slate-700');
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+</head>
+<body class="max-w-full h-[1000rem] dark:bg-teal-950 animate-munculkan overflow-hidden">
+    <div class="max-w-full p-3 flex flex-col text-center mt-4">
+        <span class="font-extrabold text-2xl text-teal-800 dark:text-teal-400">Dark Mode</span>
+        <span class="font-light text-sm dark:text-teal-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iusto?
+        </span>
+        <span id="modeBtn" class="mt-5 mx-auto rounded-full p-2 flex flex-row w-[6rem] gap-2 align-middle items-center justify-center bg-slate-200 dark:bg-slate-600 dark:text-slate-300 text-slate-700 cursor-pointer font-semibold hover:scale-105 duration-150 transition-all ease-in-out"><i id="icon" name="buttonIcon" class="fas fa-sun"></i> <span id="mode">dark</span></span>
+    </div>
+    <div class="w-1/2 mx-auto">
+        <img src="../gambar-fitri.png" alt="" class="grayscale hover:grayscale-0 duration-150 transition-all">
+    </div>
+    <div id="git" class="cursor-pointer absolute flex flex-row gap-3 items-center p-2 box-border bg-slate-600 text-slate-200 rounded-tl-full py-1 rounded-bl-full float-right right-0 translate-x-[4.5rem] duration-150 md:text-sm ld:text-sm">
+        <i class="fab fa-github"></i> hawk-xc</span>
+    </div>
+    
+</body>
+<script>
+    const toggle = document.getElementById('modeBtn');
+    const icon = document.getElementById('icon');
+    const mode = document.getElementById('mode');
+    const git = document.getElementById('git');
+
+    git.addEventListener('click', () => git.classList.toggle('translate-x-[4.5rem]'));
+
+    toggle.addEventListener('click', function() {
+        if(icon.classList.contains('fa-sun')) {
+            icon.classList.replace('fa-sun', 'fa-moon');
+            document.documentElement.classList.toggle('dark');
+            mode.innerHTML = 'dark';
+        } else {
+            icon.classList.replace('fa-moon', 'fa-sun');
+            document.documentElement.classList.toggle('dark');
+            mode.innerHTML = 'light';
+        }
+    })
+</script>
+</html>
