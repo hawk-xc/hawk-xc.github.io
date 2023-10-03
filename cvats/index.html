@@ -20,6 +20,7 @@
 
                 <!-- nav mode toggle -->
                 <div class="flex flex-row gap-4 align-middle items-center order-3">
+                    <span id="modeName" class="text-slate-500 dark:text-slate-300">darkmode</span>
                     <span id="modeToggle">
                         <input type="checkbox" id="toggle" class="hidden">
                         <label for="toggle">
@@ -51,7 +52,7 @@
 </head>
 <body class="dark:bg-slate-600 max-w-full h-[100rem]">
     <section name="hero" id="hero" class="max-sm:mt-[2rem] md:mt-14 lg:mt-14 animate-munculkan">
-        <div class="max-w-full flex flex-wrap justify-center align-middle items-center sm:mx-4 md:mx-36 min-lg:mx-10">
+        <div class="max-w-full flex flex-wrap justify-center align-middle items-center sm:mx-4 md:mx-36 min-lg:mx-10 max-sm:mt-20">
             <div name="typografi" class="block min-lg:w-full md:w-1/2 sm:w-1/2 pl-5 max-sm:order-last">
                 <span class="font-semibold text-teal-500 dark:text-teal-200 block mb-2 md:text-2xl min-lg:text-2xl">Hallo perkenalkan 👋, saya</span>
                 <span class="sm:text-3xl max-sm:text-3xl font-extrabold text-slate-700 dark:text-teal-200 md:text-6xl min-lg:text-6xl">Fitri Alisia</span>
@@ -62,9 +63,9 @@
                     <button class="bg-transparent ring-1 ring-teal-600 px-5 py-2 rounded-full mt-5 text-teal-800 hover:bg-teal-500 duration-100 dark:text-teal-200 hover:text-white active:scale-105 max-sm:text-sm font-extrabold">Linkedin</button>
                 </div>
             </div>
-            <div name="avatar" class="min-lg:w-full md:w-1/2 sm:w-1/2 flex justify-center relative align-middle items-center">
-                <img src="./gambar-fitri.png" alt="" class="z-10 mx-auto my-auto md:top-8 max-sm:w-[15rem] absolute">
-                <svg width="" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="">
+            <div name="avatar" class="min-lg:w-full md:w-1/2 sm:w-1/2 flex justify-center relative align-middle items-center overflow-hidden">
+                <img src="./gambar-fitri.png" alt="" class="z-10 mx-auto my-auto md:top-8 max-sm:w-[15rem]">
+                <svg width="" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="absolute">
                     <path fill="#5eead4" d="M48.5,-58.8C63.9,-55.5,78.3,-42.8,82.6,-27.4C86.9,-11.9,81.1,6.3,75,24.1C68.9,42,62.4,59.5,49.9,70.7C37.3,81.8,18.7,86.5,3.1,82.2C-12.4,77.9,-24.9,64.7,-40.2,54.4C-55.5,44.2,-73.6,37,-83.2,23.3C-92.7,9.6,-93.7,-10.6,-84.8,-24.3C-75.9,-38.1,-57.1,-45.3,-41.3,-48.6C-25.5,-51.8,-12.7,-51,1.9,-53.6C16.5,-56.2,33,-62.2,48.5,-58.8Z" transform="translate(100 100)" />
                   </svg>
             </div>
@@ -101,49 +102,55 @@
     <!-- my participate section -->
     <section id="participate" class="px-5 py-3 mt-20 mb-80 bg-gray-100 dark:bg-slate-700 overflow-hidden">
         <div class="container max-sm:py-8 md:py-16 md:mx-36 lg:mx-36 p-5">
-            <span class="text-2xl font-extrabold mb-5 mt-5">my participate</span>
-            <ol class="relative border-l border-gray-200 dark:border-gray-700 mt-5">                  
-                <li class="mb-10 ml-6">            
-                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
+            <span class="text-2xl font-extrabold mb-5 mt-5 text-slate-500 dark:text-slate-200">my participate</span>
+            <ol class="relative border-l border-gray-400 dark:border-slate-300 mt-1 animate-munculkan duration-150 transition-all">                  
+                <li class="mb-10 ml-4">
+                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-gray-400 dark:border-slate-300 dark:bg-slate-400"></div>
+                    
+                    <span data-aos="fade-up-left" data-aos-duration="5000">
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">December 2020</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">AWS Web Development</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo, facere facilis nemo eius nisi.</p>
+                        <wrapper class="flex justify-start gap-3">
+                            <i class="far fa-eye text-slate-500 hover:text-slate-800"></i>
+                            <i class="fas fa-save text-slate-500 hover:text-slate-800"></i>
+                        </wrapper>
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Application UI v2.0.0 <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">Latest</span></h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 13th, 2022</time>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-                <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-              </svg> Download ZIP</a>
                 </li>
-                <li class="mb-10 ml-6">
-                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
+                <li class="mb-10 ml-4">
+                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-gray-400 dark:border-slate-300 dark:bg-slate-400"></div>
+                    
+                    <span data-aos="fade-up-left" data-aos-duration="5000">
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">December 2020</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">AWS Web Development</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo, facere facilis nemo eius nisi.</p>
+                        <wrapper class="flex justify-start gap-3">
+                            <i class="far fa-eye text-slate-500 hover:text-slate-800"></i>
+                            <i class="fas fa-save text-slate-500 hover:text-slate-800"></i>
+                        </wrapper>
                     </span>
-                    <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Figma v1.3.0</h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 7th, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
                 </li>
-                <li class="ml-6">
-                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
+                <li class="mb-10 ml-4">
+                    <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-gray-400 dark:border-slate-300 dark:bg-slate-400"></div>
+                    
+                    <span data-aos="fade-up-left" data-aos-duration="5000">
+                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">December 2020</time>
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">AWS Web Development</h3>
+                        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo, facere facilis nemo eius nisi.</p>
+                        <wrapper class="flex justify-start gap-3">
+                            <i class="far fa-eye text-slate-500 hover:text-slate-800"></i>
+                            <i class="fas fa-save text-slate-500 hover:text-slate-800"></i>
+                        </wrapper>
                     </span>
-                    <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.2</h3>
-                    <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2nd, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
                 </li>
             </ol>
+            
         </div>
     </section>
 </body>
 <script>
     AOS.init({
-        once: true,
+        // once: true,
     });
 
     const toggleButton = document.getElementById('toggle');
@@ -152,10 +159,16 @@
     const span = document.querySelectorAll('span#hamburger-line');
     const mainNavBar = document.getElementById('mainNavBar');
     const navMenu = document.getElementById('navBox');
+    const modeName = document.getElementById('modeName');
 
     toggle.addEventListener('change', function() {
         toggleIcon.classList.toggle('translate-x-5');
-        document.documentElement.classList.toggle('dark')
+        document.documentElement.classList.toggle('dark');
+        if(modeName.textContent == 'darkmode') {
+            modeName.innerHTML = "lightmode";
+        } else {
+            modeName.innerHTML = "darkmode";
+        }
     });
 
     hamburgerMenu.addEventListener('click', function() {
@@ -177,6 +190,7 @@
         //     }
         // })
     })
+
 
     window.onscroll = function() {
         if(window.pageYOffset > mainNavBar.offsetTop+100) {
